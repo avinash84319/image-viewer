@@ -8,11 +8,12 @@ body{
     scrollbar-width: none;  /* Firefox */
   }
 h1{
+    margin-top:10px;
     font-family: 'montserrat', Courier, monospace;
-    font-size:50px;
+    font-size:300px;
 }
 .nonclicked{
-    margin:5px;
+    margin: 20px;
     height:100px;
     width:200px;
     font-size: 40px;
@@ -36,5 +37,5 @@ img{
     display:flex;
     align-items: center;
     justify-content: center;
-    margin:20px;
+    margin:40px;
 }

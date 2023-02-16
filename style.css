@@ -1,0 +1,35 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+h1{
+    font-family: 'montserrat', Courier, monospace;
+    font-size:50px;
+}
+.nonclicked{
+    margin:5px
+}
+.input{
+    margin:5px
+}
+img{
+    height:1080px;
+    width:auto;
+    border-radius:50px;
+}
+.table{
+   border:solid;
+   border-radius: 5px;
+   background-color: aquamarine;
+}
+.select{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="select">
+        <h1>VAISHNAVI BOTIQUE</h1>
+    </div>
+    <div class="select">
+        <table class="table">
+            <td><button onclick="changeimage(1,1)" class="nonclicked">1000 Rs</button></td>
+            <td><button onclick="changeimage(2,1)" class="nonclicked">2000 Rs</button></td>
+            <td><button onclick="changeimage(3,1)" class="nonclicked">3000 Rs</button></td>
+            <td><button onclick="changeimage(4,1)" class="nonclicked">4000 Rs</button></td>
+            <td><button onclick="changeimage(5,1)" class="nonclicked">5000 Rs</button></td>
+        </table>
+
+    </div>
+
+    <div class="select">
+        <table class="table">
+            <td><input type="text" id="input" placeholder="code"></td>
+            <td><button onclick="search()" class="nonclicked">🔍</button></td>
+        </table>
+    </div>
+    
+    <div class="select">
+        <table class="table">
+            <td><button onclick="prev()" class="nonclicked">PREV</button></td>
+            <td><button onclick="remember()" class="nonclicked">ADD +</button></td>
+            <td><button onclick="next()" class="nonclicked">NEXT</button></td>
+        </table>
+    </div>
+
+    <div class="select"><img src="img1.jpg" id="frame"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>

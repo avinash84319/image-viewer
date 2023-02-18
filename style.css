@@ -12,11 +12,18 @@ h1{
     font-family: 'montserrat', Courier, monospace;
     font-size:300px;
 }
+.display{
+    margin-top:10px;
+    font-family: 'montserrat', Courier, monospace;
+    font-size:30px;
+}
 .nonclicked{
     margin: 20px;
     height:100px;
     width:200px;
     font-size: 40px;
+    border-radius: 10%;
+    background-color:skyblue;
 }
 .input{
     margin:5px;

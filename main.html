@@ -13,11 +13,18 @@
     </div>
     <div class="select">
         <table class="table">
-            <td><button onclick="changeimage(1,1)" class="nonclicked">1000 Rs</button></td>
-            <td><button onclick="changeimage(2,1)" class="nonclicked">2000 Rs</button></td>
-            <td><button onclick="changeimage(3,1)" class="nonclicked">3000 Rs</button></td>
-            <td><button onclick="changeimage(4,1)" class="nonclicked">4000 Rs</button></td>
-            <td><button onclick="changeimage(5,1)" class="nonclicked">5000 Rs</button></td>
+            <td><button onclick="changeimage(12,1,this.id)" id="0" class="nonclicked">1200 Rs</button></td>
+            <td><button onclick="changeimage(15,1,this.id)" id="1" class="nonclicked">1500 Rs</button></td>
+            <td><button onclick="changeimage(22,1,this.id)" id="2" class="nonclicked">2200 Rs</button></td>
+            <td><button onclick="changeimage(25,1,this.id)" id="3" class="nonclicked">4000 Rs</button></td>
+        </table>
+    </div>
+    <div class="select">
+        <table class="table">
+            <td><button onclick="changeimage(30,1,this.id)" id="4" class="nonclicked">3000 Rs</button></td>
+            <td><button onclick="changeimage(35,5,this.id)" id="5" class="nonclicked">3500 Rs</button></td>
+            <td><button onclick="changeimage(40,6,this.id)" id="6" class="nonclicked">4000 Rs</button></td>
+            <td><button onclick="changeimage(45,7,this.id)" id="7" class="nonclicked">4500 Rs</button></td>
         </table>
 
     </div>
@@ -33,11 +40,14 @@
         <table class="table">
             <td><button onclick="prev()" class="nonclicked">PREV</button></td>
             <td><button onclick="remember()" class="nonclicked">ADD +</button></td>
+            <td><button onclick="send()" class="nonclicked">SEND</button></td>
             <td><button onclick="next()" class="nonclicked">NEXT</button></td>
         </table>
     </div>
 
     <div class="select"><img src="img1.jpg" id="frame"></div>
+
+    <div class="select"><h1 class="display"></h1></div>
     <script src="index.js"></script>
 </body>
 

@@ -6,16 +6,19 @@ var passobj1={
     password:"avinash22"
 }
 
-var lispass=[passobj1]
+var s=""
 
 var search=false
 
+var rememberlist=[]
 var file=1
 var imgno=0
+var k=0
 
-
-function changeimage(n,g){
-    document.getElementsByTagName('button')[file-1].style.color="black";
+function changeimage(n,g,f){
+    document.getElementById((k)).style.color="black";
+    document.getElementById((k)).style.background="skyblue";
+    k=f
     file=n
     if(g<1){
        imgno=1 
@@ -24,20 +27,24 @@ function changeimage(n,g){
     imgno=g
     }
     console.log((n) +" button thousand was clicked")
-    document.getElementById("frame").src=(file)+"000f/img"+(imgno)+".jpg";
-    document.getElementsByClassName("nonclicked")[file-1].style.color="blue";
+    document.getElementById("frame").src=(file)+"00f/img"+(imgno)+".jpg";
+    document.getElementById((f)).style.color="white";
+    document.getElementById((f)).style.background="blue";
+    return k,file,imgno;
 }
 
 function next(){
- changeimage(file,imgno+1)
+ changeimage(file,imgno+1,k)
 }
 
 function prev(){
- changeimage(file,imgno-1)
+ changeimage(file,imgno-1,k)
 }
 
 function remember(){
-
+  s=s+','+(file)+"00f/img"+(imgno)+".jpg\n";
+  document.getElementsByClassName("display")[0].innerHTML=s;
+  return s
 }
 
 function search(){
@@ -68,4 +75,8 @@ function checkpass(){
     }
 
     return search
+}
+
+function send(){
+    var win = window.open(`https://api.whatsapp.com/send/?phone=9448483336&text=here+is+my+remember+list+${s}&type=phone_number&app_absent=0`, '_blank');
 }

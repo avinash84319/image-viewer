@@ -5,6 +5,7 @@ var passobj1={
     username:"avinash",
     password:"avinash22"
 }
+var lispass=[passobj1]
 
 var s=""
 

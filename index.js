@@ -48,10 +48,12 @@ function remember(){
   return s
 }
 
-function search(){
+function find(){
     var ser=document.getElementById("input").value;
-    document.getElementById("frame").src=(ser)+".jpg";
+    document.getElementById("frame").src=(ser);
+    return 0
 }
+
 function checkpass(){
     var u=document.getElementById("input-login-username").value;
     var p = document.getElementById("input-login-password").value;
